@@ -27,9 +27,10 @@ public class MainActivity extends AppCompatActivity {
         score.saveInBackground(new SaveCallback() {
             public void done(ParseException e) {
                 if (e == null) {
-                    Log.i("Parse", "Save Succeeded");
+                    Log.i("saveInBackground", "Successful");
                 } else {
-                    Log.e("Parse", "Save Failed");
+                    Log.e("saveInBackground", "Failed");
+                    Log.e("saveInBackground",e.toString());
                 }
             }
         });

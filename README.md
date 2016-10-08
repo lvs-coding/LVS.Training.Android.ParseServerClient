@@ -2,7 +2,8 @@
 Basic Android Parse Server client, just connect and add data
 
 <b>Configuration</b><br />
-Just add APP_ID, CLIENT_ID and Parse Server URL in Strings.xml
+Create strings.xml in res/values, i removed it for security reasons
+Just add APP_ID, CLIENT_ID and Parse Server URL in the created strings.xml 
 Exemple : <br />
 
 ```xml
