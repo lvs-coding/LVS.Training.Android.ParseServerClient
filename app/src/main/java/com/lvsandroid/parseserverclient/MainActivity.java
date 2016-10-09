@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         score.put("username","pedro");
         score.put("score",96);
         score.saveInBackground(new SaveCallback() {
+            @Override
             public void done(ParseException e) {
                 if (e == null) {
                     Log.i("saveInBackground", "Successful");
